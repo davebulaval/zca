@@ -2,7 +2,7 @@
 zca
 ===
 
-ZCA whitening in python with a sklearn-like interface
+ZCA whitening in Python with a Scikit-Learn like interface.
 
 Usage
 -----
@@ -11,6 +11,7 @@ Usage
 
     from zca import ZCA
     import numpy as np
+
     X = np.random.random((10000, 15)) # data array
     trf = ZCA().fit(X)
     X_whitened = trf.transform(X)
@@ -23,15 +24,7 @@ Installation
 
 .. code:: bash
 
-    git clone https://github.com/mwv/zca.git
-    cd zca; python setup.py install
-
-Requirements
-^^^^^^^^^^^^
-
-- numpy
-- scipy
-- scikit-learn
+    pip install -U zca
 
 
 Licence

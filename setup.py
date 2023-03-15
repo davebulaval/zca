@@ -2,14 +2,14 @@ import setuptools
 
 setuptools.setup(
     name="zca",
-    version="0.1.0",
+    version="0.1.1",
     url="https://github.com/davebulaval/zca",
     author="Maarten Versteegh, David Beauchemin",
     author_email="maartenversteegh@gmail.com",
     description="ZCA whitening",
     long_description=open("README.rst").read(),
     packages=setuptools.find_packages(),
-    install_requires=[],
+    install_requires=["numpy", "scipy", "scikit-learn"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python",
